@@ -31,7 +31,20 @@ function App() {
   return (
     <div className="container">
       <Header/>
-<button type= "button"
+
+      <SearchBar
+        search={search}
+        onSearch={handleSearch}
+      />
+
+      <p>Total Students : {filteredStudents.length}</p>
+
+      <StudentList students={filteredStudents} />
+
+
+
+      <section className="counters">
+        <button type= "button"
 className="counter"
 onClick={()=>setcount((count)=>count+1)}>
   Count is {count}
@@ -42,14 +55,8 @@ onClick={()=>setcount((count)=>count+1)}>
 onClick={()=>setcount(0)}>
   reset Counter
 </button>
-      <SearchBar
-        search={search}
-        onSearch={handleSearch}
-      />
 
-      <p>Total Students : {filteredStudents.length}</p>
-
-      <StudentList students={filteredStudents} />
+      </section>
     </div>
   );
 }

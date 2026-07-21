@@ -1,32 +1,152 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f6f9;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .container {
-  width: 700px;
-  margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
 }
 
 header {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
+
+header h1 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #7f8c8d;
+}
+
+/* ---------- Inputs ---------- */
 
 input {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
-  font-size: 16px;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
 }
+
+input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.25);
+}
+
+/* ---------- Buttons ---------- */
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #3498db;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* ---------- Student Form ---------- */
+
+.add-student {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.add-student h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+/* ---------- Search ---------- */
+
+.search-bar {
+  margin-bottom: 25px;
+}
+
+/* ---------- Counter ---------- */
+
+.counters{
+display:flex;
+justify-content: center;
+margin-top: 100px;
+gap:15px;
+}
+
+.counter {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+/* ---------- Student List ---------- */
 
 .list {
   display: grid;
-  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
 }
 
+/* ---------- Student Card ---------- */
+
 .card {
-  border: 1px solid gray;
-  padding: 15px;
-  border-radius: 10px;
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
 }
-.counter{
-  margin:10px;
-  
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  color: #2c3e50;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.card button {
+  margin-top: 12px;
+  width: 100%;
+  background: #e74c3c;
+}
+
+.card button:hover {
+  background: #c0392b;
 }
