@@ -1,0 +1,32 @@
+.container {
+  width: 700px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.list {
+  display: grid;
+  gap: 15px;
+}
+
+.card {
+  border: 1px solid gray;
+  padding: 15px;
+  border-radius: 10px;
+}
+.counter{
+  margin:10px;
+  
+}
