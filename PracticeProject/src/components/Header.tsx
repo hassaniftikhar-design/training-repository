@@ -1,7 +1,7 @@
 function Header() {
 
   return (
-    <header>
+    <header className="text-center font-bold text-4xl">
       <h1>Student Dashboard</h1>
 
     </header>
